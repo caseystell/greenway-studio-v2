@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div id="mission-page">
+  <h1>PEOPLE, MEET NATURE</h1>
+  <h2>Work at Greenway Studio begins with a simple idea:<br><span class="green">uniting people with nature.</span></h2>
+  <img src="../../../static/images/desert_plant.jpg" alt="a yellow-flowering desert cactus"/>
+  <h3><span class="fa fa-leaf green">&nbsp;</span>
+    For us, this isn't only our passion; we see it as our responsibility.
+  </h3>
+  <p>
+    We understand that in modern urban life, spaces for experiencing nature are limited. 
+    Not only does Greenway Studio provide opportunities, we make the most of them by 
+    creating delightful surprises in interacting with nature.
+  </p>
+  <h3><span class="fa fa-leaf green">&nbsp;</span>
+    We offer customized solutions using a methodical approach.
+  </h3> 
+  <p>
+    Greenway Studio realizes that every project is unique, yet we approach each one the same way. 
+    Every landscape is evaluated in reference to its surroundings, the needs of the community,
+    individual budget and project constraints, and the preservation of the culture of the desert southwest.
+    While balancing conflicting needs can be a challenge, Greenway Studio finds ways to add value
+    to each project and delivers innovative solutions every time.
+  </p>
+  <h3><span class="fa fa-leaf green">&nbsp;</span>
+    We strive to make a lasting, sustainable impact.
+  </h3>
+  <p>
+    Sustainability is not just a buzzword to us; it's a way of being. We pride ourselves on 
+    creating meaningful landscapes that make a positive environmental impact and won't drain 
+    our precious regional resources. We are experienced in the use of local remediation landscape, 
+    including drought tolerant plants, native grasses, and various hydromulch techniques that 
+    contribute to a sustainable American Southwestern landscape.
+  </p>
+  <h3><span class="fa fa-leaf green">&nbsp;</span>
+    We maintain versatility while holding ourselves to the highest standards.
+  </h3>
+  <p>
+    Greenway Studio strives to develop healthy places where people live, work, play, shop, 
+    and experience vibrant landscape design. Our designs demonstrate a deep understanding of 
+    environmental planning, sustainable development, new urbanism principles, water harvesting 
+    techniques, and best practices in the field.
+  </p>
+  <h2><a href="{% url 'our-story' %}">Learn more about who we are</a></h2>
+  <a href="{% url 'contact' %}" title="Get in touch" class="input btn">Ready to work with us?</a>
+</div>
+
+{% endblock %}

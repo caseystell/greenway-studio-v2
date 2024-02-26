@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div id="portfolio-page">
+  <h1>OUR WORK</h1>
+  <div class="grid-tiles">
+    <a id="alameda-tile" class="photo-tile" href="">
+      <h2>Alameda Rec Center<br>El Paso, TX</h2>
+    </a>
+    <a id="carrasco-tile" class="photo-tile" href="">
+      <h2>SISD Carrasco Elementary<br>El Paso, TX</h2>
+    </a>
+    <a id="ttuhsc-tile" class="photo-tile" href="">
+      <h2>Texas Tech Univeristy Health & Science Center<br>El Paso, TX</h2>
+    </a>
+    <a id="eastside-reg-tile" class="photo-tile" href="">
+      <h2>Eastside Regional Park<br>El Paso, TX</h2>
+    </a>
+    <a id="franklin-mts-tile" class="photo-tile" href="">
+      <h2>Franklin Mountains Aviation Center<br>El Paso, TX</h2>
+    </a>
+    <a id="borderland-park-tile" class="photo-tile" href="">
+      <h2>Borderland Park<br>El Paso, TX</h2>
+    </a>
+    <a id="thorn-park-tile" class="photo-tile" href="">
+      <h2>Thorn Park<br>El Paso, TX</h2>
+    </a>
+    <a id="north-loop-apts-tile" class="photo-tile" href="">
+      <h2>North Loop Apartments<br>El Paso, TX</h2>
+    </a>
+    <a id="kinective-gym-tile" class="photo-tile" href="">
+      <h2>Kinective Fitness Club<br>El Paso, TX</h2>
+    </a>
+    <a id="atlantic-aviation-tile" class="photo-tile" href="">
+      <h2>Atlantic Aviation<br>El Paso, TX</h2>
+    </a>
+  </div>
+
+  <br>
+
+  <button></button>
+  <a href="{% url 'contact' %}" title="Get in touch" class="input btn white">Ready to work with us?</a>
+</div>
+
+{% endblock %}

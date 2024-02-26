@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div id="our-story-page">
+  <h1>OUR STORY</h1>
+  <h2>With <span class="green">10+ years</span> in the business, you can entrust your next design to us.</h2>
+  <img src="../../../static/images/david-and-luis.PNG" alt="two men standing in front of the El Paso mountains, smiling">
+  <ul class="project-types">
+    <li><span class="fa fa-bicycle">&nbsp;</span>Community parks&nbsp;&nbsp;</li>
+    <li><span class="fa fa-soccer-ball-o">&nbsp;</span>Sports fields&nbsp;&nbsp;</li>
+    <li><span class="fa fa-tree">&nbsp;</span>Park ponds&nbsp;&nbsp;</li>
+    <li><span class="fa fa-child">&nbsp;</span>Schools&nbsp;&nbsp;</li>
+    <li><span class="fa fa-medkit">&nbsp;</span>Medical offices&nbsp;&nbsp;</li>
+    <li><span class="fa fa-leaf">&nbsp;</span>Community gardens&nbsp;&nbsp;</li>
+    <li><span class="fa fa-plus">&nbsp;</span>and more!&nbsp;&nbsp;</li>
+  </ul>
+  <div class="content">
+    <div id="david" class="profile">
+      <div class="side-by-side">
+        <ul><strong>David A. Parra</strong>
+          <li>Landscape Architect, RLA, CNU-A</li>
+          <li>MS Macquarie University</li>
+          <li>BLA Texas Tech University</li>
+          <li><a href="mailto:david@greenway-studio.com" title="Contact us">david@greenway-studio.com</a></li>
+        </ul>
+        <img src="../../../static/images/david-headshot.PNG" alt="man smiling outside an El Paso mountain landscape"/>
+      </div>
+      <p>
+        Having grown up throughout Latin America, David Parra is the founding partner of Greenway Studio 
+        in El Paso, Texas. He earned his Masters of Environmental Planning from Macquarie University in 
+        Sydney, Australia, and his Bachelors of Landscape Architecture from Texas Tech University. He is 
+        passionate about Landscape Architecture and enjoys global experiences that bring a rich and varied 
+        background to his work.
+      </p>
+      <p>
+        David's collaborative approach and dedication ensures a fully integrated landscape. His work 
+        throughout the southwest brings a deep understanding of water conservation practices and sustainable 
+        design. From the design process all the way through construction, David's attention to detail, keen 
+        aesthetic, and experience in the field allow him to create and deliver innovative landscape design 
+        on any scale.
+      </p>
+    </div>
+    <div id="luis" class="profile">
+      <div class="side-by-side">
+        <ul><strong>Luis Fernando Terrazas</strong>
+          <li>Landscape Architect, RLA, LI, CNU-A</li>
+          <li>BLA Texas Tech University</li>
+          <li><a href="mailto:luis@greenway-studio.com" title="Contact us">luis@greenway-studio.com</a></li>
+          <li style="visibility: hidden;">Nada</li>
+        </ul>
+        <img src="../../../static/images/luis-headshot.PNG" alt="man smiling outside an El Paso mountain landscape"/>
+      </div>
+      <p>
+        As principal of Greenway Studio, Luis shares a combined experience of over ten years in the landscape 
+        architecture industry. He is a Texas Tech graduate (a Red Raider at heart!) with his Bachelors in 
+        Landscape Architecture. Luis influences and inspires others in desert southwest landscape 
+        best practices. His attention to detail and intuition play a key role in site-sensitive design, 
+        striking a harmonious balance between social and environmental design.
+      </p>
+      <p>
+        Luis is especially capable of managing projects of any scale and across multiple jurisdictions. 
+        He completely transforms landscapes while delivering health, safety, and welfare-conscious design. 
+        He promotes sustainable design through the combination of native landscape materials and the introduction 
+        of water harvesting techniques. As a Texas Licensed Irrigator, Luis adds a wealth of knowledge and 
+        hands-on experience that assures efficiency throughout the process.
+      </p>
+    </div>
+  </div>
+  <a href="{% url 'contact' %}" title="Get in touch" class="input btn">Ready to work with us?</a>
+</div>
+
+{% endblock %}

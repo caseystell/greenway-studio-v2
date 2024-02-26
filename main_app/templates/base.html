@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ screenname }} - Greenway Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.PNG' %}" >
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script defer src="{% static 'js/main.js' %}"></script> 
+</head>
+
+<body>
+  <header>
+    <div class="top-nav">
+      <a href="{% url 'index' %}" title="Greenway Studio Home" class="nav-logo">
+        <!-- <img class="logo" src="{% static 'images/gs-logo.png' %}" alt="Greenway Studio leaf logo" /> -->
+        <div id="logo-1"></div>
+        <div id="logo-2"></div>
+      </a>
+      <nav role="navigation" class="nav-menu" id="myNavMenu">
+        <a href="{% url 'portfolio' %}" class="nav-link">PORTFOLIO</a>
+        <a href="{% url 'mission' %}" class="nav-link">ABOUT</a>
+        <a href="{% url 'contact' %}" class="nav-link">CONTACT</a>
+        <a href="javascript:void(0);" class="nav-button collapse" onclick="toggleResponsiveness()">
+          <input type="checkbox" />
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer>
+    <ul class="accred-list">
+      <li class="accred-logo">
+        <a class="accred-link" href="https://www.nrpa.org/" target="_blank" title="National Recreation and Park Association">
+          <img src="{% static 'images/accred-logos/nrpa-logo.png' %}" alt="NRPA Logo" />
+        </a>
+      </li>
+      <li class="accred-logo">
+        <a class="accred-link" href="https://www.tbae.texas.gov/" target="_blank" title="Texas Board of Architectural Examiners">
+          <img src="{% static 'images/accred-logos/tbae-logo.png' %}" alt="TBAE Logo" />
+        </a>
+      </li>
+      <li class="accred-logo">
+        <a class="accred-link" href="https://www.cnu.org/" target="_blank" title="Congress for the New Urbanism">
+          <img src="{% static 'images/accred-logos/cnu-logo.png' %}" alt="CNU Logo" />
+        </a>
+      </li>
+      <li class="accred-logo">
+        <a class="accred-link" href="https://www.epa.gov/watersense" target="_blank" title="EPA WaterSense">
+          <img src="{% static 'images/accred-logos/watersense-epa-logo.png' %}" alt="Watersense EPA Logo" />
+        </a>
+      </li>
+      <li class="accred-logo">
+        <a class="accred-link" href="https://www.texasasla.org/" target="_blank" title="ASLA Texas">
+          <img src="{% static 'images/accred-logos/asla-logo.png' %}" alt="ASLA Logo" />
+        </a>
+      </li>
+      <li class="accred-logo">
+        <a class="accred-link" href="https://www.rld.nm.gov/" target="_blank" title="New Mexico Regulation & Licensing Department">
+          <img src="{% static 'images/accred-logos/nmrld-logo.jpeg' %}" alt="NMRLD Logo" />
+        </a>
+      </li>
+      <li class="accred-logo tceq">
+        <a class="accred-link" href="https://www.tceq.texas.gov/" target="_blank" title="Texas Commission on Environmental Quality">
+          <img src="{% static 'images/accred-logos/tceq-logo.jpeg' %}" alt="TCEQ Logo" />
+        </a>
+      </li>
+    </ul>
+    <div class="copyright">©2024 Greenway Studio LLC</div>
+    <button onclick="topFunction()" id="go-to-top-btn" class="btn input" title="Go to top">
+      <span class="fa fa-chevron-up"></span>
+    </button>
+  </footer>
+
+  <script>
+    window.onscroll = function() {scrollFunction(), invertHeader()};
+
+    // Changes header color on scroll
+    function invertHeader() {
+      if (window.scrollY >= 50) {
+        document.getElementsByTagName("header")[0].classList.add("inverted");
+        document.getElementById("logo-1").style.display = "none";
+        document.getElementById("logo-2").style.display = "block";
+      } else {
+        document.getElementsByTagName("header")[0].classList.remove("inverted");
+        document.getElementById("logo-1").style.display = "block";
+        document.getElementById("logo-2").style.display = "none";
+      }
+    };
+
+    // Scroll to top button
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("go-to-top-btn").style.display = "block";
+      } else {
+        document.getElementById("go-to-top-btn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+</html>

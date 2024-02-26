@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div id="contact-page" class="flex-ctr">
+  <h1>INTERESTED? HAVE QUESTIONS?</h1>
+  <p class="green-bkg">
+    <em>Hours of Operation</em><br/>
+    Monday - Thursday: 8 am - 6 pm<br/>
+    Friday: 8 am - 12 pm (noon) MST
+  </p>
+  <div class="side-by-side">
+    <div class="flex-ctr">
+      <h2 class="green"><span class="fa fa-map-marker"></span> Stop by in person</h2>
+      <p>
+        <a href="https://www.google.com/maps/place/Greenway+Studio/@31.7605293,-106.4796855,15z/data=!4m6!3m5!1s0x86e7599868a48d5f:0xdeee60d92b785d8f!8m2!3d31.7605293!4d-106.4796855!16s%2Fg%2F11b76mgvvs?entry=ttu" 
+          target="_blank" title="Get directions!">
+          817 Olive Ave.<br>
+          El Paso, TX 79901
+        </a>
+      </p>
+    </div>
+    <div class="flex-ctr">
+      <h2 class="green"><span class="fa fa-phone"></span> Call us</h2>
+      <p>(915) 873-7393</p>
+    </div>
+  </div>
+  <hr>
+  <h2 class="green"><span class="fa fa-envelope-o"></span> Or, send us a message</h2>
+    <form method="POST" action="">
+      {% csrf_token %}
+      <label>Name&nbsp;</label>
+      <input type="text" name="name" placeholder="Juan Diego" required >
+      <label>Email</label>
+      <input type="text" name="email" placeholder="example@email.com" required >
+      <label>Phone&nbsp;</label>
+      <input type="text" name="phone" placeholder="(123) 456-7890" required >
+      <label>Company</label>
+      <input type="text" name="company" placeholder="Bob's Burgers" >
+      <label>Message</label>
+      <textarea name="message" placeholder="Start typing your message here!" rows="10" cols="30" required></textarea>
+      <button type="submit" class="input btn">Send</button>
+    </form>
+    <p class="small ital">Please give us up to 24 business hours to respond to messages. 
+       For more urgent requests, please call us.</p>
+  <br>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<section class="photo-slider">
+  <img class="slider-img fade" src="../../static/images/gs-panoramic2.web2.jpg" alt=""/>
+  <img class="slider-img fade" src="../../static/images/gs-project-11-1-u3466-fr_1.jpg" alt=""/>
+  <img class="slider-img fade" src="../../static/images/gs-project-2-2.jpg" alt=""/>
+  <img class="slider-img fade" src="../../static/images/gs-project-5-5.jpg" alt=""/>
+  <img class="slider-img fade" src="../../static/images/gs-project-9-3-u3344-fr.jpg" alt=""/>
+
+  <div class="dots" hidden>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</section>
+
+{% endblock %}
