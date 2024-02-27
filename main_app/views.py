@@ -44,12 +44,6 @@ def portfolio(request):
     'screenname':screenname
   })
 
-def clients(request):
-  screenname = 'Who We Serve'
-  return render(request, 'about/clients.html', {
-    'screenname':screenname
-  })
-
 def mission(request):
   screenname = 'Our Mission'
   return render(request, 'about/mission.html', {
@@ -71,5 +65,35 @@ def alameda(request):
 def sisd_carrasco(request):
   screenname = 'Carrasco Elementary'
   return render(request, 'projects/sisd-carrasco.html', {
+    'screenname':screenname
+  })
+
+def ttuhsc(request):
+  screenname = 'TTUHSC'
+  return render(request, 'projects/ttuhsc.html', {
+    'screenname':screenname
+  })
+
+def eastside_reg(request):
+  screenname = 'Eastside Regional Park'
+  return render(request, 'projects/eastside-reg-park.html', {
+    'screenname':screenname
+  })
+
+def franklin_mts_aviation(request):
+  screenname = 'Franklin Mountains Aviation'
+  return render(request, 'projects/franklin-mts-aviation.html', {
+    'screenname':screenname
+  })
+
+def borderland_park(request):
+  screenname = 'Borderland Park'
+  return render(request, 'projects/borderland-park.html', {
+    'screenname':screenname
+  })
+
+def thorn_park(request):
+  screenname = 'Thorn Park'
+  return render(request, 'projects/thorn-park.html', {
     'screenname':screenname
   })

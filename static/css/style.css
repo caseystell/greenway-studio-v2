@@ -285,11 +285,11 @@ header {
 }
 
 #eastside-reg-tile {
-  background-image: url('/static/images/Eastside-Reg-Park/DSC_0105.JPG');
+  background-image: url('/static/images/Eastside-Reg-Park/ERP-13.jpg');
 }
 
 #borderland-park-tile {
-  background-image: url('/static/images/Borderland-Park/GOPR0516.JPG');
+  background-image: url('/static/images/Borderland-Park/BP-01.JPG');
 }
 
 #carrasco-tile {
@@ -297,15 +297,15 @@ header {
 }
 
 #ttuhsc-tile {
-  background-image: url('/static/images/TTUHSC/DSC_0317\ \(Photoshop\).jpg');
+  background-image: url('/static/images/TTUHSC/TTU-05.jpg');
 }
 
 #thorn-park-tile {
-  background-image: url('/static/images/Borderland-Park/GOPR0516.JPG');
+  background-image: url('/static/images/Thorn-Park/TP-01.JPG');
 }
 
 #franklin-mts-tile {
-  background-image: url('/static/images/Franklin-Mtn-Aviation/G0050646.JPG');
+  background-image: url('/static/images/Franklin-Mtn-Aviation/FRA-01.JPG');
 }
 
 #north-loop-apts-tile {
@@ -404,7 +404,6 @@ header {
   height: 20rem;
   width: 100%;
   object-fit: cover;
-  opacity: 0.7;
 }
 
 /* Our Story Page */

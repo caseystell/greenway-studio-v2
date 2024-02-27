@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div class="individual-project-page">
+  <a class="back-link" href="{% url 'portfolio' %}"><span class="fa fa-chevron-left"></span> Back</a>
+  <h1>EASTSIDE REGIONAL PARK</h1>
+  <h2>El Paso, TX</h2>
+
+  <div class="grid-tiles">
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-01.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-02.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-03.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-04.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-05.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-06.JPG" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-07.JPG" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-08.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-09.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-10.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-11.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-12.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-13.jpg" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-14.JPG" alt="plants and trees surrounding a park building" class="photo-tile" />
+    <img src="../../../static/images/Eastside-Reg-Park/ERP-15.JPG" alt="plants and trees surrounding a park building" class="photo-tile" />
+    
+  </div>
+
+  <div class="bottom-btns">
+    <a href="{% url 'contact' %}" title="Get in touch" class="input btn white">Ready to work with us?</a>
+  </div>
+
+</div>
+
+{% endblock %}

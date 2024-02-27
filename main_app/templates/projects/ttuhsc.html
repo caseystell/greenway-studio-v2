@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div class="individual-project-page">
+  <a class="back-link" href="{% url 'portfolio' %}"><span class="fa fa-chevron-left"></span> Back</a>
+  <h1>TEXAS TECH UNIVERSITY HEALTH SCIENCES CENTER</h1>
+  <h2>El Paso, TX (Central)</h2>
+
+  <div class="grid-tiles">
+    <img src="../../../static/images/TTUHSC/TTU-01.JPG" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-02.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-03.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-04.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-05.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-06.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-07.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-08.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-09.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-10.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-11.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-12.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    <img src="../../../static/images/TTUHSC/TTU-13.jpg" alt="plants and trees surrounding medical offices" class="photo-tile" />
+    
+  </div>
+
+  <div class="bottom-btns">
+    <a href="{% url 'contact' %}" title="Get in touch" class="input btn white">Ready to work with us?</a>
+  </div>
+
+</div>
+
+{% endblock %}
