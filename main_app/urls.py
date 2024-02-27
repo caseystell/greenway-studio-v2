@@ -14,4 +14,5 @@ urlpatterns = [
   path('projects/franklin-mts-aviation', views.franklin_mts_aviation, name='franklin-mts-aviation'),
   path('projects/borderland-park', views.borderland_park, name='borderland-park'),
   path('projects/thorn-park', views.thorn_park, name='thorn-park'),
+  path('projects/north-loop-apts', views.north_loop_apts, name='north-loop-apts'),
 ]

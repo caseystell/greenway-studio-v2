@@ -97,3 +97,9 @@ def thorn_park(request):
   return render(request, 'projects/thorn-park.html', {
     'screenname':screenname
   })
+
+def north_loop_apts(request):
+  screenname = 'North Loop Apartments'
+  return render(request, 'projects/north-loop-apts.html', {
+    'screenname':screenname
+  })
