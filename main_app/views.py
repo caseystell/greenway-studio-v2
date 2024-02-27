@@ -61,3 +61,15 @@ def our_story(request):
   return render(request, 'about/our-story.html', {
     'screenname':screenname
   })
+
+def alameda(request):
+  screenname = 'Alameda Rec Center'
+  return render(request, 'projects/alameda-rec-center.html', {
+    'screenname':screenname
+  })
+
+def sisd_carrasco(request):
+  screenname = 'Carrasco Elementary'
+  return render(request, 'projects/sisd-carrasco.html', {
+    'screenname':screenname
+  })

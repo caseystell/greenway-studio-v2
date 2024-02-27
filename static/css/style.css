@@ -239,6 +239,10 @@ header {
 
 /* Portfolio Page */
 
+.hidden {
+  display: none;
+}
+
 #portfolio-page h2 {
   text-align: left;
   padding: 1rem;
@@ -269,8 +273,15 @@ header {
   cursor: pointer;
 }
 
+.bottom-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
 #alameda-tile {
-  background-image: url('/static/images/Alameda-Rec-Center/GOPR0528.JPG');;
+  background-image: url('/static/images/Alameda-Rec-Center/ARC-03.jpg');;
 }
 
 #eastside-reg-tile {
@@ -282,7 +293,7 @@ header {
 }
 
 #carrasco-tile {
-  background-image: url('/static/images/SISD-Carrasco-Elem/DSC_0004\ \(PS\).jpg');
+  background-image: url('/static/images/SISD-Carrasco-Elem/SISD-01.jpg');
 }
 
 #ttuhsc-tile {
@@ -308,6 +319,28 @@ header {
 #atlantic-aviation-tile {
   background-image: url('/static/images/Atlantic-Aviation/DSC_0501\ \(PO\).jpg');
 }
+
+/* Individual Project Pages */
+
+.back-link:hover {
+  color: #39B54A;
+}
+
+.individual-project-page .photo-tile {
+  object-fit: cover;
+}
+
+.individual-project-page .photo-tile:hover {
+  opacity: 100%;
+  cursor: default;
+}
+
+.back-link {
+  position: relative;
+  top: 70px;
+  left: 35px;
+}
+
 
 /* Contact Page */
 
@@ -364,7 +397,7 @@ header {
 #mission-page > a,
 #our-story-page > a,
 .white {
-  color: white;
+  color: #FFFFFF !important;
 }
 
 #mission-page > img {
