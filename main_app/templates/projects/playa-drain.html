@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div class="individual-project-page">
+  <a class="back-link" href="{% url 'portfolio' %}"><span class="fa fa-chevron-left"></span> Back</a>
+  <h1>PLAYA DRAIN</h1>
+  <h2>El Paso, TX</h2>
+
+  <div class="grid-tiles">
+    <img src="../../../static/images/Playa-Drain/PD-01.JPG" alt="plants and trees surrounding a walking path" class="photo-tile" />
+    <img src="../../../static/images/Playa-Drain/PD-02.JPG" alt="plants and trees surrounding a walking path" class="photo-tile" />
+    <img src="../../../static/images/Playa-Drain/PD-03.JPG" alt="plants and trees surrounding a walking path" class="photo-tile" />
+    <img src="../../../static/images/Playa-Drain/PD-04.JPG" alt="plants and trees surrounding a walking path" class="photo-tile" />
+    <img src="../../../static/images/Playa-Drain/PD-05.JPG" alt="plants and trees surrounding a walking path" class="photo-tile" />
+    <img src="../../../static/images/Playa-Drain/PD-06.JPG" alt="plants and trees surrounding a walking path" class="photo-tile" />
+   
+  </div>
+
+  <div class="bottom-btns">
+    <a href="{% url 'contact' %}" title="Get in touch" class="input btn white">Ready to work with us?</a>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -203,7 +203,7 @@ header {
 
 .slider-img {
   width: 100%;
-  height: 40rem;
+  height: 42rem;
   display: none;
   object-fit: cover;
 }
@@ -304,7 +304,7 @@ header {
   background-image: url('/static/images/Thorn-Park/TP-01.JPG');
 }
 
-#franklin-mts-tile {
+#franklin-mts-aviation-tile {
   background-image: url('/static/images/Franklin-Mtn-Aviation/FRA-01.JPG');
 }
 
@@ -313,11 +313,31 @@ header {
 }
 
 #kinective-gym-tile {
-  background-image: url('/static/images/Kinective-Gym/GOPR0971.JPG');
+  background-image: url('/static/images/Kinective-Gym/KFC-03.JPG');
 }
 
 #atlantic-aviation-tile {
-  background-image: url('/static/images/Atlantic-Aviation/DSC_0501\ \(PO\).jpg');
+  background-image: url('/static/images/Atlantic-Aviation/AA-02.jpg');
+}
+
+#camelot-clinic-tile {
+  background-image: url('/static/images/Camelot-Clinic/CC-01.jpg');
+}
+
+#playa-drain-tile {
+  background-image: url('/static/images/Playa-Drain/PD-02.JPG');
+}
+
+#univ-ave-tile {
+  background-image: url('/static/images/Univ-Ave/UA-01.jpg');
+}
+
+#westfall-apts-tile {
+  background-image: url('/static/images/Westfall-Apts/WVA-10.JPG');
+}
+
+#spray-parks-tile {
+  background-image: url('/static/images/Spray-Parks/SP-05.jpg');
 }
 
 /* Individual Project Pages */

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<div class="individual-project-page">
+  <a class="back-link" href="{% url 'portfolio' %}"><span class="fa fa-chevron-left"></span> Back</a>
+  <h1>SPRAY PARKS</h1>
+  <h2>El Paso, TX</h2>
+
+  <div class="grid-tiles">
+    <img src="../../../static/images/Spray-Parks/SP-01.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-02.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-03.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-04.JPG" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-05.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-06.JPG" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-07.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-08.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-09.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-10.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+    <img src="../../../static/images/Spray-Parks/SP-11.jpg" alt="plants and trees surrounding a spray park" class="photo-tile" />
+   
+  </div>
+
+  <div class="bottom-btns">
+    <a href="{% url 'contact' %}" title="Get in touch" class="input btn white">Ready to work with us?</a>
+  </div>
+
+</div>
+
+{% endblock %}

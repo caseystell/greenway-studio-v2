@@ -15,4 +15,11 @@ urlpatterns = [
   path('projects/borderland-park', views.borderland_park, name='borderland-park'),
   path('projects/thorn-park', views.thorn_park, name='thorn-park'),
   path('projects/north-loop-apts', views.north_loop_apts, name='north-loop-apts'),
+  path('projects/kinective', views.kinective, name='kinective'),
+  path('projects/atlantic-aviation', views.atlantic_aviation, name='atlantic-aviation'),
+  path('projects/camelot-clinic', views.camelot_clinic, name='camelot-clinic'),
+  path('projects/playa-drain', views.playa_drain, name='playa-drain'),
+  path('projects/university-ave', views.univ_ave, name='univ-ave'),
+  path('projects/westfall-apts', views.westfall_apts, name='westfall-apts'),
+  path('projects/spray-parks', views.spray_parks, name='spray-parks'),
 ]

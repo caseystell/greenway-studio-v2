@@ -103,3 +103,45 @@ def north_loop_apts(request):
   return render(request, 'projects/north-loop-apts.html', {
     'screenname':screenname
   })
+
+def kinective(request):
+  screenname = 'Kinective Fitness Club'
+  return render(request, 'projects/kinective.html', {
+    'screenname':screenname
+  })
+
+def atlantic_aviation(request):
+  screenname = 'Atlantic Aviation'
+  return render(request, 'projects/atlantic-aviation.html', {
+    'screenname':screenname
+  })
+
+def camelot_clinic(request):
+  screenname = 'Camelot Clinic'
+  return render(request, 'projects/camelot-clinic.html', {
+    'screenname':screenname
+  })
+
+def playa_drain(request):
+  screenname = 'Playa Drain'
+  return render(request, 'projects/playa-drain.html', {
+    'screenname':screenname
+  })
+
+def univ_ave(request):
+  screenname = 'UTEP University Ave'
+  return render(request, 'projects/university-ave.html', {
+    'screenname':screenname
+  })
+
+def westfall_apts(request):
+  screenname = 'Westfall Apartments'
+  return render(request, 'projects/westfall-apts.html', {
+    'screenname':screenname
+})
+
+def spray_parks(request):
+  screenname = 'Spray Parks'
+  return render(request, 'projects/spray-parks.html', {
+    'screenname':screenname
+})
