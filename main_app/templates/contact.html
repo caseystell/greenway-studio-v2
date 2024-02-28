@@ -28,19 +28,15 @@
   </div>
   <hr>
   <h2 class="green"><span class="fa fa-envelope-o"></span> Or, send us a message</h2>
+    <h3>{{ info_message }}</h3>
     <form method="POST" action="">
       {% csrf_token %}
-      <label>Name&nbsp;</label>
-      <input type="text" name="name" placeholder="Juan Diego" required >
-      <label>Email</label>
-      <input type="text" name="email" placeholder="example@email.com" required >
-      <label>Phone&nbsp;</label>
-      <input type="text" name="phone" placeholder="(123) 456-7890" required >
-      <label>Company</label>
-      <input type="text" name="company" placeholder="Bob's Burgers" >
-      <label>Message</label>
-      <textarea name="message" placeholder="Start typing your message here!" rows="10" cols="30" required></textarea>
-      <button type="submit" class="input btn">Send</button>
+      <table>
+        {{ form.as_table }}
+      </table>
+      <a href="{% url 'contact' %}" class='captcha-refresh'>Get a new Captcha</a>
+      <input type="submit" class="btn" value="Send" >
+
     </form>
     <p class="small ital">Please give us up to 24 business hours to respond to messages. 
        For more urgent requests, please call us.</p>
