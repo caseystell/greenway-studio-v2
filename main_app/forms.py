@@ -1,12 +1,12 @@
-from django import forms
+from django.forms import ModelForm
 from captcha.fields import CaptchaField
 from .models import CustomUser
 
-class SubmissionForm(forms.Form):
+class SubmissionForm(ModelForm):
   captcha = CaptchaField()
 
   class Meta:
     model = CustomUser
-    fields = '__all__'
+    fields = ('name', 'email', 'phone', 'company', 'message')
 
   

@@ -25,8 +25,7 @@ def contact(request):
       # send_mail() variables
       subject = "You have a new message - Greenway Studio"
       compiled_message = f'''
-        You have a new message that was submitted through Greenway
-        Studio website:\n
+        You have a new message that was submitted through Greenway Studio website:\n
         Contact Name: {name}
         Contact Email: {email}
         Contact Phone: {phone}

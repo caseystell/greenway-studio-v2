@@ -399,30 +399,33 @@ header {
 }
 
 #contact-page {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 #contact-page h3 {
-  margin: 2rem;
+  margin: 1rem;
   font-weight: 600;
   color: rgb(240, 128, 24);
 }
 
-/* th {
+th {
   text-align: right;
-  padding: 0.5rem 2rem 0.5rem 0;
-  vertical-align: bottom;
+  padding: 0.5rem 1rem 0.5rem 0;
+  vertical-align: top;
 }
 
-td > input {
+td > input,
+td > textarea {
   width: 25rem;
 }
 
 #id_message {
   height: 10rem;
-  vertical-align: top;
-  word-wrap: break-word;
-} */
+}
+
+#id_captcha_1 {
+  width: 15rem;
+}
 
 .captcha-refresh {
   margin: 1rem 0;
@@ -451,11 +454,6 @@ td > input {
 #our-story-page h2 {
   padding: 2rem;
   font-weight: 500;
-  /* background-image: url('../assets/images/El_Paso_Landscape.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: auto; */
 }
 
 #mission-page h3 {
@@ -522,6 +520,7 @@ td > input {
   text-align: justify;
   padding: 0.25rem;
   line-height: 1.4rem;
+  margin: 0.5rem 0;
 }
 
 .project-types {
@@ -704,6 +703,10 @@ footer > div {
     margin: 0;
   }
 
+  .grid-tiles img:first-of-type {
+    margin-top: 12rem;
+  }
+
   .individual-project-page > h2,
   .back-link {
     display: none;
@@ -730,7 +733,10 @@ footer > div {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 1rem;
+  }
+
+  .side-by-side {
+    gap: 0.5rem;
   }
 }
 
@@ -739,14 +745,13 @@ footer > div {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    gap: 1rem;
   }
 
   #our-story-page .side-by-side {
     display: flex;
     flex-direction: row;
-    margin-left: 1rem;
-    gap: 0;
+    justify-content: space-between;
+    margin: 0 0.25rem;
   }
 
   #our-story-page > img {
@@ -763,6 +768,23 @@ footer > div {
   #contact-page h2,
   #contact-page h1 {
     font-size: 18px;
+  }
+
+  .side-by-side > ul {
+    padding: 0.25rem 0;
+  }
+
+  th {
+    padding-right: 0;
+  }
+
+  td > input,
+  td > textarea {
+    width: 12rem;
+  }
+
+  #id_captcha_1 {
+    width: 7rem;
   }
 
   .small {
@@ -807,10 +829,37 @@ footer > div {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .side-by-side > ul {
+    text-align: left;
+  }
+
+  .profile > p {
+    margin: 0.5rem 0;
+    padding: 0 !important;
+  }
+
+  .side-by-side > img {
+    margin: 0.5rem 0.25rem !important;
   }
 
   .project-types {
     justify-content: start;
+  }
+
+  .individual-project-page > h1 {
+    font-size: 1rem;
+  }
+
+  .bottom-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-page h3 {
+    margin: 0.5rem 0;
   }
 }
